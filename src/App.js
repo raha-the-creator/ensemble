@@ -6,9 +6,7 @@ import MovieListHeading from "./comps/MovieListHeading";
 import SearchBar from "./comps/SearchBar";
 import AddFavourites from "./comps/AddFavourites";
 import RemoveFavourites from "./comps/RemoveFavourites";
-import { BrowserRouter as Router, Route, Routes, Switch } from "react-router-dom";
-import Favourites from "./pages/Favourites";
-import Navbar from "./comps/Navbar";
+
 
 function App() {
   const [movies, setMovies] = useState([]);

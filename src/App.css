@@ -69,6 +69,8 @@ body {
 .btn {
   display: flex;
   justify-content: center;
+  background-color: #272823;
+  color: white;
 }
 
 .heading {
