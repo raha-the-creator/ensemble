@@ -1,15 +1,10 @@
 body {
   background-color: #141414;
-  color: #fff;
 }
 
 .movie-app > .row {
   overflow-x: auto;
   flex-wrap: nowrap;
-}
-
-.acc {
-  border: 1px solid red;
 }
 
 .image-container {
@@ -38,14 +33,60 @@ body {
   text-align: center;
 }
 
-.overlay1 {
-  position: absolute;
-  background: rgba(0,0,0,0.8);
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-  bottom: 3;
-  font-size: 20px; 
+/* New stylings */
+
+.movies {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.card {
+  display: inline-block;
+  width: 50%;
+  max-width: 15rem;
+  margin: 1rem;
+  overflow: hidden;
+
+}
+
+.poster {
+  display: block;
+	min-height: 20rem; /* layout hack */
+	background: #fff center center no-repeat;
+	background-size: cover;
+}
+
+.poster > img {
+  display: block;
+	width: 100%;
+}
+
+.text {
   padding: 20px;
-  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favBtn {
+  display: flex;
+  align-items: center;
+
 }

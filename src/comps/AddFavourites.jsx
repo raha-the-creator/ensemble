@@ -2,8 +2,8 @@ import React from "react";
 
 const AddFavourites = () => {
   return (
-    <>
-      <span className="mr-2">Add To Favourites</span>
+    <div className="">
+      <span style={{marginRight: '10px'}} className="mr-2">Add To Favourites</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -17,7 +17,7 @@ const AddFavourites = () => {
           d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
         />
       </svg>
-    </>
+    </div>
   );
 };
 
