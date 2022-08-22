@@ -6,6 +6,9 @@ import MovieListHeading from "./comps/MovieListHeading";
 import SearchBar from "./comps/SearchBar";
 import AddFavourites from "./comps/AddFavourites";
 import RemoveFavourites from "./comps/RemoveFavourites";
+import { BrowserRouter as Router, Route, Routes, Switch } from "react-router-dom";
+import Favourites from "./pages/Favourites";
+import Navbar from "./comps/Navbar";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -59,11 +62,11 @@ function App() {
 
   return (
     <div className="container-fluid movie-app">
-      <div className="row d-flex align-items-center mt-4 mb-4">
-        <MovieListHeading heading="Movies" />
+      <div className="heading">        
         <SearchBar searchValue={searchValue} setSearchValue={setSearchValue}/>
       </div>
-      <div className="row">
+      <div className="wrapper">
+        <MovieListHeading heading="Search for Movies" />
         <MovieList 
           movies={movies}
           favouriteComponent={AddFavourites} 
@@ -71,7 +74,7 @@ function App() {
         />
       </div>
       <div className="row d-flex align-items-center mt-4 mb-4">
-        <MovieListHeading heading="Favourites" />
+        <MovieListHeading heading="Your Favourites" />
       </div>
       <div className="row">
         <MovieList 

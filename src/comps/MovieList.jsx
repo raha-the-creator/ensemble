@@ -13,7 +13,7 @@ const MovieList = (props) => {
                 <img src={movie.Poster} alt="movie poster" />
             </div>
             <div className="text">
-                <h3>Title: {movie.Title}</h3>
+                <h4>Title: {movie.Title}</h4>
                 <p>Release year: {movie.Year}</p>
                 <button>Learn More!!!</button>
             </div>
